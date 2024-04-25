@@ -15,6 +15,36 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+      isEmail: true,
+    },
+  },
+
+  imageurl: {
+    type: Sequelize.STRING,
+    defaultValue: 'https://static.vecteezy.com/system/resources/previews/024/555/721/original/cartoon-cute-student-icon-free-png.png', // Default image URL here
+    allowNull: true,
+  },
+
+  gpa: {
+    type: Sequelize.DECIMAL(3, 1),
+    allowNull: true,
+    validate: {
+      isDecimal: true,
+      min: 0.0,
+      max: 4.0,
+    },
+  },
+  
+  campusId: {
+    type: Sequelize.INTEGER,
+    allowNull: true,
   }
 });
 
