@@ -20,6 +20,12 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  imageurl: {
+    type: Sequelize.STRING,
+    defaultValue: 'https://coursedog-images-public.s3.us-east-2.amazonaws.com/undefined/htr.png', // Default image URL here
+    allowNull: true,
   }
 });
 
