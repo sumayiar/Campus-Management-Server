@@ -1,4 +1,5 @@
 # server-starter-code
+Group member names: Sumayia Rashid, Tamanna Chowdhury, and Zeeshan Ahmed Gondal.
 
 This repository is the server (back-end) starter code for Final Project - Full-Stack CRUD Application.
 
