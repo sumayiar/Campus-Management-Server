@@ -22,7 +22,7 @@ const Campus = db.define("campus", {
     type: Sequelize.STRING,
   },
 
-  imageurl: {
+  imageUrl: {
     type: Sequelize.STRING,
     defaultValue: 'https://coursedog-images-public.s3.us-east-2.amazonaws.com/undefined/htr.png', // Default image URL here
     allowNull: true,
