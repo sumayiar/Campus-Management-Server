@@ -23,7 +23,7 @@ const Campus = db.define("campus", {
   },
 
   imageUrl: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     defaultValue: 'https://pbs.twimg.com/profile_images/1676600958153904131/OSV4hFd7_400x400.png', // Default image URL here
     allowNull: true,
   }

@@ -27,7 +27,7 @@ const Student = db.define("student", {
   },
 
   imageUrl: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     defaultValue: 'https://static.vecteezy.com/system/resources/previews/024/555/721/original/cartoon-cute-student-icon-free-png.png', // Default image URL here
     allowNull: true,
   },
