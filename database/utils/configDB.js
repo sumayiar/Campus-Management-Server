@@ -14,9 +14,3 @@ module.exports = {
   dbUser,
   dbPwd
 };
-
-/**
- * The purpose of this file is to set up the parameters of our database.
- * Configuring a database establishes the optimization of performance, security, and functionality of our program.
- * In our case, we have a username and password to ensure the security of our database from unauthorized access.
- */
